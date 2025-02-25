@@ -1,0 +1,15 @@
+DECLARE childNum: INTEGER
+DECLARE totalTime: INTEGER
+DECLARE timeMins: REAL
+DECLARE timeSeconds: REAL
+
+OUTPUT "How many children: " INPUT childNum
+IF childNum <= 0 OR childNum = 1 THEN
+    OUTPUT "Get out 👉🚪"
+ENDIF 
+IF childNum > 0 THEN
+    OUTPUT "How much time total (mins): " INPUT totalTime
+    timeMins ← totalTime / childNum
+    timeSeconds ← timeMins / 60
+    OUTPUT ROUND(timeMins, 0), " mins" OUTPUT ROUND(timeSeconds, 0), " seconds"
+ENDIF
