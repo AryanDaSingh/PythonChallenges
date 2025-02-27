@@ -1,9 +1,11 @@
+//VARIABLES
 DECLARE childNum: INTEGER
 DECLARE totalTime: INTEGER
 DECLARE timeMins: REAL
 DECLARE timeSeconds: REAL
-
+//INPUTS
 OUTPUT "How many children: " INPUT childNum
+//PROCESS + OUTPUTS
 IF childNum <= 0 OR childNum = 1 THEN
     OUTPUT "Get out 👉🚪"
 ENDIF 
